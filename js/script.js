@@ -4,7 +4,6 @@ fetch("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72")
     return response.json();
 	})
 	.then((data) => {
-    console.log(data)
 		data.forEach((room) => {
 			let rooms = document.getElementById("stays");
       
@@ -23,6 +22,7 @@ fetch("https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72")
       name.innerHTML = room.name;  
       
       let price = document.createElement("p");
+      price.className = "price"
       price.innerHTML = "R$: " + room.price + ",00 / Noite";
       
       rooms.appendChild(div);
