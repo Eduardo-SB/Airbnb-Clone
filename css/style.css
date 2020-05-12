@@ -38,8 +38,9 @@ body{
 }
 
 #stays{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 30px;
   padding: 20px;
   border: 1px solid ;
@@ -58,7 +59,7 @@ body{
 }
 
 .stays-list img{
-  width: 100%;
+  width: 330px;
   height: 200px;
   border-radius: 10px;
 }
